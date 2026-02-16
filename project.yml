@@ -1,0 +1,25 @@
+name: DeskMem
+options:
+  bundleIdPrefix: com.deskmem
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  minimumXcodeGenVersion: "2.38"
+
+targets:
+  DeskMem:
+    type: application
+    platform: macOS
+    sources:
+      - DeskMem
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.deskmem.DeskMem
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: "5.9"
+        CODE_SIGN_ENTITLEMENTS: DeskMem/DeskMem.entitlements
+        INFOPLIST_FILE: DeskMem/Info.plist
+        GENERATE_INFOPLIST_FILE: true
+        INFOPLIST_KEY_NSAccessibilityUsageDescription: "DeskMem needs Accessibility access to read and move window positions across monitors."
+        ENABLE_APP_SANDBOX: false

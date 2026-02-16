@@ -1,0 +1,28 @@
+# Xcode
+DeskMem.xcodeproj/xcuserdata/
+DeskMem.xcodeproj/project.xcworkspace/xcuserdata/
+DeskMem.xcodeproj/project.xcworkspace/xcshareddata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Build
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Dependencies
+Pods/
+Carthage/
+
+# OS
+.DS_Store
+*.swp
+*~
+
+# Claude
+.claude/

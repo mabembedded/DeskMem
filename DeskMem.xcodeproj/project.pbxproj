@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		160B38FE2C9B51731AC47188 /* DeskMemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452984219C33B71B3549FC74 /* DeskMemApp.swift */; };
+		3AD4DF84D071C84BAE6BA2E8 /* PermissionPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3C425FFCA77B2C643E721 /* PermissionPromptView.swift */; };
+		59A43A7F02F65C2C2B921E3E /* AppMonitorAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BD5CFC289314B82639E562 /* AppMonitorAssignment.swift */; };
+		6732FFD331A6D254E88007F1 /* WindowWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446544F48BAF1F734086EEEC /* WindowWatcher.swift */; };
+		7F4AAE53A7FA32C59642040E /* MonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E47E84B5C1A8478CFAD42 /* MonitorService.swift */; };
+		A9338A6ABA6D6A0BA583076E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE921B14D69069A15788C5B /* AppDelegate.swift */; };
+		AE8E55C669600E10CB19AC82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD32423A3368A6481D2E741 /* ContentView.swift */; };
+		B25779D47DE55D34B852412A /* WindowMover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D3A96A88E825D682665C7 /* WindowMover.swift */; };
+		DEACC13D0D4E92C20F6F6A45 /* SpaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ECCE4FB774C669DB93077E /* SpaceService.swift */; };
+		EE1BC14BC2CF71E93A0161C1 /* AssignmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A155041744306ABCC1E7F /* AssignmentStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		025AC868C37705C6DB7D51DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		12D86252189059BC2731EFAC /* DeskMem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeskMem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		223D3A96A88E825D682665C7 /* WindowMover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowMover.swift; sourceTree = "<group>"; };
+		31BD5CFC289314B82639E562 /* AppMonitorAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitorAssignment.swift; sourceTree = "<group>"; };
+		40ECCE4FB774C669DB93077E /* SpaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceService.swift; sourceTree = "<group>"; };
+		446544F48BAF1F734086EEEC /* WindowWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowWatcher.swift; sourceTree = "<group>"; };
+		452984219C33B71B3549FC74 /* DeskMemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskMemApp.swift; sourceTree = "<group>"; };
+		7EE921B14D69069A15788C5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFD32423A3368A6481D2E741 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DEF3C425FFCA77B2C643E721 /* PermissionPromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionPromptView.swift; sourceTree = "<group>"; };
+		E17A155041744306ABCC1E7F /* AssignmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentStore.swift; sourceTree = "<group>"; };
+		E2A595D0D8CDA25758103BAF /* DeskMem.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeskMem.entitlements; sourceTree = "<group>"; };
+		E60E47E84B5C1A8478CFAD42 /* MonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		152333053206339E608E36F9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E17A155041744306ABCC1E7F /* AssignmentStore.swift */,
+				E60E47E84B5C1A8478CFAD42 /* MonitorService.swift */,
+				40ECCE4FB774C669DB93077E /* SpaceService.swift */,
+				223D3A96A88E825D682665C7 /* WindowMover.swift */,
+				446544F48BAF1F734086EEEC /* WindowWatcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		24AF102DD70542814643390E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12D86252189059BC2731EFAC /* DeskMem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFA0F566370635A2DAC8EF75 = {
+			isa = PBXGroup;
+			children = (
+				CBB4067876C8A0847CE966D8 /* DeskMem */,
+				24AF102DD70542814643390E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE66A3F63BB40C865DEF5FE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31BD5CFC289314B82639E562 /* AppMonitorAssignment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEC926D637B50E948D7A3C3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFD32423A3368A6481D2E741 /* ContentView.swift */,
+				DEF3C425FFCA77B2C643E721 /* PermissionPromptView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBB4067876C8A0847CE966D8 /* DeskMem */ = {
+			isa = PBXGroup;
+			children = (
+				7EE921B14D69069A15788C5B /* AppDelegate.swift */,
+				E2A595D0D8CDA25758103BAF /* DeskMem.entitlements */,
+				452984219C33B71B3549FC74 /* DeskMemApp.swift */,
+				025AC868C37705C6DB7D51DB /* Info.plist */,
+				BE66A3F63BB40C865DEF5FE1 /* Models */,
+				152333053206339E608E36F9 /* Services */,
+				BEC926D637B50E948D7A3C3C /* Views */,
+			);
+			path = DeskMem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D9D461551F0175F76E9139C /* DeskMem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24659D69A5AD1B170883DE61 /* Build configuration list for PBXNativeTarget "DeskMem" */;
+			buildPhases = (
+				1E0615140ECA2A79A01129D8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeskMem;
+			packageProductDependencies = (
+			);
+			productName = DeskMem;
+			productReference = 12D86252189059BC2731EFAC /* DeskMem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A235B0C18545763F2C789B6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = FD5BA0E04FBC8584E7FB6382 /* Build configuration list for PBXProject "DeskMem" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AFA0F566370635A2DAC8EF75;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D9D461551F0175F76E9139C /* DeskMem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E0615140ECA2A79A01129D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9338A6ABA6D6A0BA583076E /* AppDelegate.swift in Sources */,
+				59A43A7F02F65C2C2B921E3E /* AppMonitorAssignment.swift in Sources */,
+				EE1BC14BC2CF71E93A0161C1 /* AssignmentStore.swift in Sources */,
+				AE8E55C669600E10CB19AC82 /* ContentView.swift in Sources */,
+				160B38FE2C9B51731AC47188 /* DeskMemApp.swift in Sources */,
+				7F4AAE53A7FA32C59642040E /* MonitorService.swift in Sources */,
+				3AD4DF84D071C84BAE6BA2E8 /* PermissionPromptView.swift in Sources */,
+				DEACC13D0D4E92C20F6F6A45 /* SpaceService.swift in Sources */,
+				B25779D47DE55D34B852412A /* WindowMover.swift in Sources */,
+				6732FFD331A6D254E88007F1 /* WindowWatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8EB48330B8362ED2CEEBFF36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DeskMem/DeskMem.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeskMem/Info.plist;
+				INFOPLIST_KEY_NSAccessibilityUsageDescription = "DeskMem needs Accessibility access to read and move window positions across monitors.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deskmem.DeskMem;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		C7C54701429822F0472AB4E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2B4892078DF38A468CD92A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DeskMem/DeskMem.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeskMem/Info.plist;
+				INFOPLIST_KEY_NSAccessibilityUsageDescription = "DeskMem needs Accessibility access to read and move window positions across monitors.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deskmem.DeskMem;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		EBDC692B40DCA9F43536964C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24659D69A5AD1B170883DE61 /* Build configuration list for PBXNativeTarget "DeskMem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EB48330B8362ED2CEEBFF36 /* Debug */,
+				D2B4892078DF38A468CD92A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD5BA0E04FBC8584E7FB6382 /* Build configuration list for PBXProject "DeskMem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDC692B40DCA9F43536964C /* Debug */,
+				C7C54701429822F0472AB4E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A235B0C18545763F2C789B6D /* Project object */;
+}

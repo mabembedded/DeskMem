@@ -22,6 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             AXIsProcessTrustedWithOptions(options)
         }
 
+        windowMover.setWindowWatcher(windowWatcher)
         windowWatcher.startWatching()
     }
 

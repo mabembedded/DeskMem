@@ -34,17 +34,25 @@ class MonitorService: ObservableObject {
             return
         }
 
-        // Determine if monitors are arranged horizontally or vertically
-        // by comparing the spread in x vs y across all screens
-        let xs = allScreens.map { $0.frame.origin.x }
-        let ys = allScreens.map { $0.frame.origin.y }
-        let xSpread = (xs.max() ?? 0) - (xs.min() ?? 0)
-        let ySpread = (ys.max() ?? 0) - (ys.min() ?? 0)
+        // Determine arrangement by checking how much the screens overlap in each axis.
+        // Stacked monitors overlap significantly in x. Side-by-side monitors overlap in y.
+        // This handles offset stacking (e.g., smaller monitor centered or right-aligned above a wider one).
+        let frames = allScreens.map { $0.frame }
 
-        if ySpread > xSpread {
+        // For 2 monitors: check overlap between them
+        let a = frames[0]
+        let b = frames[1]
+
+        let xOverlap = max(0, min(a.maxX, b.maxX) - max(a.minX, b.minX))
+        let yOverlap = max(0, min(a.maxY, b.maxY) - max(a.minY, b.minY))
+
+        // Normalize overlap by the smaller screen's dimension
+        let xOverlapRatio = xOverlap / min(a.width, b.width)
+        let yOverlapRatio = yOverlap / min(a.height, b.height)
+
+        if xOverlapRatio > yOverlapRatio {
             arrangement = .vertical
             // In Cocoa coords, higher y = higher on screen. We want index 0 = bottom.
-            // Bottom screen has lower Cocoa y, so sort ascending.
             screens = allScreens.sorted { $0.frame.origin.y < $1.frame.origin.y }
         } else {
             arrangement = .horizontal
